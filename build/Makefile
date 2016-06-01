@@ -99,6 +99,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named all
+
+# Build rule for target.
+all: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 all
+.PHONY : all
+
+# fast build rule for target.
+all/fast:
+	$(MAKE) -f CMakeFiles/all.dir/build.make CMakeFiles/all.dir/build
+.PHONY : all/fast
+
+#=============================================================================
 # Target rules for targets named main_novel
 
 # Build rule for target.
@@ -165,6 +178,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... all"
 	@echo "... edit_cache"
 	@echo "... main_novel"
 	@echo "... rebuild_cache"

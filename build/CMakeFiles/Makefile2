@@ -53,13 +53,44 @@ CMAKE_SOURCE_DIR = /home/apark/cpp_project
 CMAKE_BINARY_DIR = /home/apark/cpp_project/build
 
 #=============================================================================
+# Target rules for target CMakeFiles/all.dir
+
+# All Build rule for target.
+CMakeFiles/all.dir/all:
+	$(MAKE) -f CMakeFiles/all.dir/build.make CMakeFiles/all.dir/depend
+	$(MAKE) -f CMakeFiles/all.dir/build.make CMakeFiles/all.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/apark/cpp_project/build/CMakeFiles  1
+	@echo "Built target all"
+.PHONY : CMakeFiles/all.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/all.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/apark/cpp_project/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/all.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/apark/cpp_project/build/CMakeFiles 0
+.PHONY : CMakeFiles/all.dir/rule
+
+# Convenience name for target.
+all: CMakeFiles/all.dir/rule
+.PHONY : all
+
+# clean rule for target.
+CMakeFiles/all.dir/clean:
+	$(MAKE) -f CMakeFiles/all.dir/build.make CMakeFiles/all.dir/clean
+.PHONY : CMakeFiles/all.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/all.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/main_novel.dir
 
 # All Build rule for target.
 CMakeFiles/main_novel.dir/all:
 	$(MAKE) -f CMakeFiles/main_novel.dir/build.make CMakeFiles/main_novel.dir/depend
 	$(MAKE) -f CMakeFiles/main_novel.dir/build.make CMakeFiles/main_novel.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/apark/cpp_project/build/CMakeFiles  1 2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/apark/cpp_project/build/CMakeFiles  2 3
 	@echo "Built target main_novel"
 .PHONY : CMakeFiles/main_novel.dir/all
 
