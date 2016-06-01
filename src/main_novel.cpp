@@ -1,6 +1,5 @@
 /** @file */
 #include <string>
-
 #include "novel_printer.h"
 
 int
