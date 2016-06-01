@@ -16,14 +16,14 @@ message("cpp_project_BIN_DIR is ${cpp_project_BIN_DIR}")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${cpp_project_BIN_DIR})
 
 
-set(NP_INCLUDES "${cpp_project_INCLUDE_DIR}/novel_printer.h")
-set(NP_SOURCES "${cpp_project_SRC_DIR}/novel_printer.cpp")
+set(NOVEL_PRINTER_SOURCES 
+ "${cpp_project_SRC_DIR}/novel_printer.cpp"
+ "${cpp_project_INCLUDE_DIR}/novel_printer.h")
 
 include_directories("${cpp_project_INCLUDE_DIR}")
 
 add_executable(main_novel src/main_novel.cpp 
-	${NP_INCLUDES} 
-	${NP_SOURCES}
+	${NOVEL_PRINTER_SOURCES} 
 	)
 
 target_link_libraries(main_novel ${cpp_project_LIBRARIES})
