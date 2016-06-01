@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['novelprinter',['NovelPrinter',['../classNovelPrinter.html#a9b312de4bc12a5de4d2ada68e8c5c50b',1,'NovelPrinter']]]
+  ['printnovel',['PrintNovel',['../classNovelPrinter.html#a207d50b9fe5bc2e2e90de753e05aa32c',1,'NovelPrinter']]]
 ];
