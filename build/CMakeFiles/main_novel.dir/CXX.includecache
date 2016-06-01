@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/novel_printer.h
+iostream
+-
+string
+-
+
+/home/apark/cpp_project/src/novel_printer.cpp
+string
+-
+novel_printer.h
+/home/apark/cpp_project/src/novel_printer.h
+

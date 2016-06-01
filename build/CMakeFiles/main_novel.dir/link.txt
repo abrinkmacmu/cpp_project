@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/main_novel.dir/src/main_novel.cpp.o CMakeFiles/main_novel.dir/src/novel_printer.cpp.o  -o ../bin/main_novel -rdynamic 
